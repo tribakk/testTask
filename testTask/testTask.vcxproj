@@ -142,6 +142,9 @@
   <ItemGroup>
     <ClCompile Include="testTask.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FirstNRepeatingStream_v3.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

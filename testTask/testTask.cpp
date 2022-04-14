@@ -2,10 +2,25 @@
 //
 
 #include <iostream>
+#include "FirstNRepeatingStream_v3.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    {
+        FirstNRepeatingStream st(1);
+        std::string testStr = "abbcacfg";
+        std::vector < std::optional<char> > vec;
+        for (int i = 0; i < testStr.size(); i++)
+            vec.push_back(st.next(testStr[i]));
+    }
+
+    {
+        FirstNRepeatingStream st(2);
+        std::string testStr = "bcfbfcbccfccbb";
+        std::vector < std::optional<char> > vec;
+        for (int i = 0; i < testStr.size(); i++)
+            vec.push_back(st.next(testStr[i]));
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
